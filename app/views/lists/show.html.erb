@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Riding:</b>
+  <%= @list.riding %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @list.street %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @list.number %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @list.name %>
+</p>
+
+<p>
+  <b>Occupation:</b>
+  <%= @list.occupation %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @list.phone %>
+</p>
+
+<p>
+  <b>2011:</b>
+  <%= @list.2011 %>
+</p>
+
+<p>
+  <b>2008:</b>
+  <%= @list.2008 %>
+</p>
+
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

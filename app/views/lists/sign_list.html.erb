@@ -1,0 +1,27 @@
+<h3>Sign Locations for  <%= Riding %> By Street</h3>
+
+<table>
+	<tr>
+		<% data.signs.column_names.each do |c| %>
+			<th><%= c %></th>
+		<% end %>
+	</tr>
+		
+<% data.week1_data.each do |r| %>
+	<tr>
+		<% r.to_a[0..2].each do |c| %>
+			<td><%= c %></td>
+		<% end %>
+		
+	<% r.to_a[3..-1].each do |c| %>
+		<% if c.blank? %>
+		<td style="background: #999999;">&nbsp;</td>
+		<% else %>
+		<td align="right"><%= c %></td>
+		
+		<% end %>
+	<% end %>
+	</tr>
+<% end%>
+		
+</table>
